@@ -1,0 +1,78 @@
+
+
+  /* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Select Dropdown */
+  .breed-select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    transition: border-color 0.3s;
+  }
+  
+  .breed-select:focus {
+    border-color: #6c63ff;
+    outline: none;
+  }
+  
+  /* Loader */
+  .loader {
+    font-size: 16px;
+    color: #6c63ff;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add a spinner animation for the loader */
+  .loader::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 3px solid #6c63ff;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 
+}
+  
+
+ .hidden {
+        display: none;
+      }
+      
+ .visible {
+        display: block;
+      }  
