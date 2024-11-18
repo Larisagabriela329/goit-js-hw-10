@@ -13,7 +13,7 @@ const catApi = new CatApi();
 async function populateBreedSelect() {
   showLoader();
   hideElement(breedSelect);
-  hideElement(errorMessage); // Hide error message at the start of each request
+  hideElement(errorMessage); 
 
   try {
     const breeds = await catApi.fetchBreeds();
@@ -39,7 +39,7 @@ async function populateBreedSelect() {
 async function displayCatInfo(breedId) {
   showLoader();
   hideElement(catInfoDiv);
-  hideElement(errorMessage); // Hide error message at the start of each request
+  hideElement(errorMessage); 
 
   try {
     const catData = await catApi.fetchCatByBreed(breedId);
